@@ -24,7 +24,7 @@ public class LibraryUtil {
 	 */
 	public static long getNextFreeId(List<Book> books) {
 		long nextId = 0;
-		for (int i = 0; i <= books.size(); i++) {
+		for (int i = 0; i < books.size(); i++) {
 			Book book = books.get(i);
 			if (book.getId() >= nextId) {
 				nextId = book.getId() + 1;
@@ -55,7 +55,7 @@ public class LibraryUtil {
 		boolean found = false;
 		for (Book book : books) {
 			if (book.getTitle().equals(title)
-					|| book.getAuthor().equals(author)) {
+					&& book.getAuthor().equals(author)) {
 				found = true;
 			}
 		}
