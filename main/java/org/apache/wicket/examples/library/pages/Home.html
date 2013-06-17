@@ -1,0 +1,71 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<head>
+    <title>HSR MAS SE - Software Testing - SystemUnderTest: Wicket Example Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+  <span wicket:id = "border">
+  <table width = "100%">
+	<tr>
+	  <th>ID</th>
+	  <th>Title</th>
+	  <th>Author</th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+	  <th></th>
+    </tr>
+    <tr wicket:id = "books">
+      <td>
+        <span wicket:id = "id">
+        1
+        </span>
+      </td>
+      <td>
+        <a wicket:id = "details" href="#">
+        <span wicket:id = "title">Huckleberry Finn</span>
+        </a>
+      </td>
+      <td>
+        <span wicket:id = "author">
+        Mark Twain
+        </span>
+      </td>
+      <td>
+        <a wicket:id = "moveUp" href="#">Up</a>
+      </td>
+      <td>
+        <a wicket:id = "moveDown" href="#">Down</a>
+      </td>
+      <td>
+        <a wicket:id = "remove" href="RemoveBook.html">Remove</a>
+      </td>
+      <td>
+        <a wicket:id = "edit" href="EditBook.html">Edit</a>
+      </td>
+    </tr>
+  </table>	
+  <p>
+  
+  <table width="100%">
+  	<tr>
+  		<td>
+  			<a wicket:id = "addBook" href="AddBook.html">Add Book</a>
+  		</td>
+  		<td align="right">
+  			<a wicket:id = "generateStatistics" href="#">Generate Statistics</a>
+  		</td>
+  	</tr>
+  </table>
+  <p>
+ </p>
+ <p>
+  <span wicket:id = "navigator"/>
+  </p>
+  
+  <wicket:link><a href="MySignOutPage.html">Sign Out</a></wicket:link>
+  </span>
+  
+</body>
+</html>
